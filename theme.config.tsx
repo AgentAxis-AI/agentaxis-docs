@@ -43,7 +43,11 @@ const config: DocsThemeConfig = {
       <>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={title ? title + ' – Agent Axis' : 'Agent Axis'} />
-        <meta property="og:description" content="Sint sint exercitation in non et" />
+        <meta property="og:description" content="Decentralized AI Agent Protocol" />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content="https://agentaxis.ai" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@agentaxisai" />
       </>
     )
   },
