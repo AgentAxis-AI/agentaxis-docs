@@ -3,28 +3,35 @@ import { useTheme } from 'next-themes'
 import { type DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: function LogoComponent() {
-    const { resolvedTheme } = useTheme()
-    return (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img
-          src={resolvedTheme === 'dark' ? '/logo_w.svg' : '/logo.svg'}
-          alt="Agent Axis"
-          width={24}
-          height={24}
-          style={{ borderRadius: '4px' }}
-        />
-        <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
-          Agent Axis
-        </span>
-      </div>
-    )
-  },
+  // Simple text logo replacement
+  logo: (
+    <span style={{ fontWeight: 800 }}>
+      Agent Axis
+    </span>
+  ),
+  // Comment out the image-based logo component
+  // logo: function LogoComponent() {
+  //   const { resolvedTheme } = useTheme()
+  //   return (
+  //     <div style={{ display: 'flex', alignItems: 'center' }}>
+  //       <img
+  //         src={resolvedTheme === 'dark' ? '/logo_w.svg' : '/logo.svg'}
+  //         alt="Agent Axis"
+  //         width={24}
+  //         height={24}
+  //         style={{ borderRadius: '4px' }}
+  //       />
+  //       <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
+  //         Agent Axis
+  //       </span>
+  //     </div>
+  //   )
+  // },
   faviconGlyph: '📚',
   project: {
-    link: 'https://github.com/AgentAxis-AI/agentaxis-docs'
+    link: 'https://git.new/agentaxis'
   },
-  docsRepositoryBase: 'https://github.com/AgentAxis-AI/agentaxis-docs',
+  docsRepositoryBase: 'https://git.new/agentaxis',
   useNextSeoProps() {
     return {
       titleTemplate: '%s – Agent Axis'
