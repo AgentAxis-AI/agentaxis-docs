@@ -33,8 +33,10 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://git.new/agentaxis',
   useNextSeoProps() {
+    const { frontMatter } = useConfig()
     return {
-      titleTemplate: '%s – Agent Axis'
+      titleTemplate: frontMatter.title ? `%s – Agent Axis` : 'Agent Axis',
+      title: frontMatter.title || 'Agent Axis Documentation'
     }
   },
   head: () => {
