@@ -7,4 +7,4 @@
   - `public/logo_w.svg` (white variant)
 - [ ] Add product screenshots to public directory:
   - `public/product.png` 
-  - `public/product_dark.png` (dark mode variant)# agentaxis-docs
+  - `public/product_dark.png` (dark mode variant) 
